@@ -1,0 +1,61 @@
+{
+    "api": {
+        "require_startup_execution": true,
+        "class_name": "OnBoardingScreenPlugin.OnBoardingScreenPlugin",
+        "modules": ["OnBoardingScreenPlugin.OnBoardingScreenPlugin"]
+    },
+    "dependency_repository_url": ["https://github.com/applicaster-plugins/OnBoardingScreenPlugin-iOS"],
+    "platform": "ios",
+    "author_name": "Marcos Reyes - Applicaster",
+    "author_email": "m.reyes@applicaster.com",
+    "manifest_version": "0.0.1",
+    "name": "On-Boarding Screen Plugin",
+    "description": "On-boarding loading hook plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user.",
+    "type": "general",
+    "identifier": "OnBoardingScreenPlugin",
+    "ui_builder_support": true,
+    "dependency_name": "OnBoardingScreenPlugin",
+    "dependency_version": "0.0.1",
+    "whitelisted_account_ids": ["56e92d4b643037000b000000"],
+    "min_zapp_sdk": "10.5.0-Dev",
+    "deprecated_since_zapp_sdk": "",
+    "unsupported_since_zapp_sdk": "",
+    "react_native": false,
+    "custom_configuration_fields": [
+        {
+            "type": "text",
+            "key": "onBoardingFeedPath",
+            "tooltip_text": "On Boarding Feed Path"
+        },
+        {
+            "type": "color_picker",
+            "key": "backgroundColor",
+            "tooltip_text": "Background color for the screen, to also be used on selected category labels."
+        },
+        {
+            "type": "color_picker",
+            "key": "titleColor",
+            "tooltip_text": "Color to be used in main title label and in unselected category labels."
+        },
+        {
+            "type": "color_picker",
+            "key": "highlightColor",
+            "tooltip_text": "Highlight color to be used in subtitle label, main action button and selected segments."
+        },
+        {
+            "type": "color_picker",
+            "key": "categoryBackgroundColor",
+            "tooltip_text": "Background color to be used in category items."
+        },
+        {
+            "type": "switch",
+            "key": "applyBorder",
+            "tooltip_text": "If enabled, a border is applied to selected segments. Using the highlight color."
+        },
+        {
+            "type": "uploader",
+            "key": "ios_assets_bundle",
+            "default": "www.some-url/ios_assets.zip"
+        }
+    ]    
+}
