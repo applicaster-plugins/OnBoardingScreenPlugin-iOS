@@ -41,6 +41,10 @@ class OnBoardingOneStepViewController: UIViewController {
     }
     
     private func styleUI() {
+        topTitleLabel.text = ""
+        hightlightTitleLabel.text = ""
+        nextStepButton.setTitle("", for: .normal)
+        
         //Apply transparent gradient to nextStepButton view
         let gradient = CAGradientLayer()
         gradient.frame = nextStepButtonView.bounds
@@ -92,8 +96,9 @@ class OnBoardingOneStepViewController: UIViewController {
         
         viewModel?.segmentsSelected.asObservable()
             .subscribe(onNext: { [weak self] segments in
-                let chooseLaterTxt = self?.viewModel?.onboardingTexts.value["skipOnboarding"]?.string ?? "Choose Later"
-                let finishTxt = self?.viewModel?.onboardingTexts.value["finishOnboarding"]?.string ?? "Finish"
+                guard let viewModel = self?.viewModel else { return }
+                let chooseLaterTxt = viewModel.onboardingTexts.value["skipOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
+                let finishTxt = viewModel.onboardingTexts.value["finishOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
                 
                 let buttonTextToSet = (segments.count > 0) ? finishTxt : chooseLaterTxt
                 self?.nextStepButton.setTitle(buttonTextToSet, for: .normal)
@@ -125,8 +130,9 @@ class OnBoardingOneStepViewController: UIViewController {
     }
     
     private func setOnboardingTexts() {
-        let titleTxt = self.viewModel?.onboardingTexts.value["title"]?.string ?? "Choose Your"
-        let subtitleTxt = self.viewModel?.onboardingTexts.value["subtitle"]?.string ?? "Favorite"
+        guard let viewModel = viewModel else { return }
+        let titleTxt = viewModel.onboardingTexts.value["title"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
+        let subtitleTxt = viewModel.onboardingTexts.value["subtitle"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
         
         topTitleLabel.text = titleTxt
         hightlightTitleLabel.text = subtitleTxt
