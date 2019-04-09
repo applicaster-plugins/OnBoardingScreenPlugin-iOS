@@ -78,6 +78,7 @@ class OnBoardingOneStepViewController: UIViewController {
                 self?.showHideCategoryCollection()
                 self?.categoryCollectionView.reloadData()
                 self?.segmentsCollectionView.reloadData()
+                self?.setActionButtonTitle()
             })
             .disposed(by: bag)
         
@@ -95,13 +96,8 @@ class OnBoardingOneStepViewController: UIViewController {
             .disposed(by: bag)
         
         viewModel?.segmentsSelected.asObservable()
-            .subscribe(onNext: { [weak self] segments in
-                guard let viewModel = self?.viewModel else { return }
-                let chooseLaterTxt = viewModel.onboardingTexts.value["skipOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
-                let finishTxt = viewModel.onboardingTexts.value["finishOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
-                
-                let buttonTextToSet = (segments.count > 0) ? finishTxt : chooseLaterTxt
-                self?.nextStepButton.setTitle(buttonTextToSet, for: .normal)
+            .subscribe(onNext: { [weak self] _ in
+                self?.setActionButtonTitle()
             })
             .disposed(by: bag)
         
@@ -136,6 +132,15 @@ class OnBoardingOneStepViewController: UIViewController {
         
         topTitleLabel.text = titleTxt
         hightlightTitleLabel.text = subtitleTxt
+    }
+    
+    private func setActionButtonTitle() {
+        guard let viewModel = self.viewModel else { return }
+        let chooseLaterTxt = viewModel.onboardingTexts.value["skipOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
+        let finishTxt = viewModel.onboardingTexts.value["finishOnboarding"]?.dictionary?["\(viewModel.languageCodeToUse())"]?.string ?? ""
+        
+        let buttonTextToSet = (viewModel.segmentsSelected.value.count > 0) ? finishTxt : chooseLaterTxt
+        nextStepButton.setTitle(buttonTextToSet, for: .normal)
     }
     
     private func showHideCategoryCollection() {
