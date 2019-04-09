@@ -11,7 +11,8 @@ import ZappPlugins
 import UIKit
 import SwiftyJSON
 
-@objc public class OnBoardingScreenPlugin: NSObject, ZPAppLoadingHookProtocol {
+@objc public class OnBoardingScreenPlugin: NSObject, ZPAppLoadingHookProtocol, ZPAdapterProtocol {
+    // MARK: ZPAppLoadingHookProtocol
     public var configurationJSON: NSDictionary?
     public lazy var mainStoryboard: UIStoryboard = {
         return UIStoryboard(name: "OnBoardingViewControllers", bundle: Bundle(for: self.classForCoder))
@@ -60,7 +61,7 @@ import SwiftyJSON
     func presentOnBoardingScreen(completion: (() -> Void)?) {
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "OnBoardingOneStepViewController") as! OnBoardingOneStepViewController
         OnBoardingManager.sharedInstance.onBoardingPluginCompletion = completion
-        let viewModel = OnBoardingOneStepViewModel()
+        let viewModel = OnBoardingViewModel()
         viewController.viewModel = viewModel
 
         //present OnBoardingVC
@@ -76,6 +77,14 @@ import SwiftyJSON
         }
     }
     
+    // MARK: ZPAdapterProtocol
+    public func handleUrlScheme(_ params:NSDictionary) {
+        // xcrun simctl openurl booted "<urlScheme>://plugin?type=general&action=content_preferences"
+        
+        if let type = params["type"] as? String, type == "general", let action = params["action"] as? String, action == "content_preferences" {
+            presentOnBoardingScreen(completion: nil)
+        }
+    }
     
     // MARK: -
     

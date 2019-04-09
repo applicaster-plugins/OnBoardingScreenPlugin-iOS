@@ -21,7 +21,7 @@ class OnBoardingOneStepViewController: UIViewController {
     @IBOutlet var nextStepButton: UIButton!
     
     let bag = DisposeBag()
-    var viewModel: OnBoardingOneStepViewModel?
+    var viewModel: OnBoardingViewModel?
     private var finishedLoadingInitialCells = false
     
     override func viewDidLoad() {
@@ -113,6 +113,15 @@ class OnBoardingOneStepViewController: UIViewController {
                 }, onError: { [weak self] _ in
                     self?.dismissOnBoardingVC()
             }).disposed(by: bag)
+        
+        viewModel?.shouldRefresh.asObservable()
+            .subscribe(onNext: { [weak self] shouldRefresh in
+                if shouldRefresh {
+                    self?.categoryCollectionView.reloadData()
+                    self?.segmentsCollectionView.reloadData()
+                }
+            })
+            .disposed(by: bag)
     }
     
     private func setOnboardingTexts() {

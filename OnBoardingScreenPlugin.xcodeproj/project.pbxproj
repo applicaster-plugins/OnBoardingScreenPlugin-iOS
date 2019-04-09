@@ -14,7 +14,6 @@
 		39762D6322566FCB00569847 /* SegmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */; };
 		39762D652256710F00569847 /* SegmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39762D642256710F00569847 /* SegmentCollectionViewCell.swift */; };
 		862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */; };
-		862CB3252252741A00C5F0A7 /* OnBoardingScreenPluginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862CB3242252741A00C5F0A7 /* OnBoardingScreenPluginBaseViewController.swift */; };
 		864F589E222D8F8A00CD2EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */; };
 		864F58A1222D8F8A00CD2EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864F589F222D8F8A00CD2EF2 /* Main.storyboard */; };
 		864F58A8222D8F8A00CD2EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F58A7222D8F8A00CD2EF2 /* ViewController.swift */; };
@@ -22,7 +21,7 @@
 		864F58B0222D8F8B00CD2EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864F58AE222D8F8A00CD2EF2 /* LaunchScreen.storyboard */; };
 		864F58C0222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		864F58C9222D900A00CD2EF2 /* OnBoardingScreenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */; };
-		86A59B4B223197A300CED18F /* OnBoardingOneStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A59B4A223197A300CED18F /* OnBoardingOneStepViewModel.swift */; };
+		86A59B4B223197A300CED18F /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */; };
 		86B0D3F122399BF60013FD3F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0D3EF22399BF60013FD3F /* CategoryCollectionViewCell.swift */; };
 		86B0D3F222399BF60013FD3F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */; };
 		86EEB16D2232DA250050B82A /* OnBoardingViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */; };
@@ -44,7 +43,6 @@
 		665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingOneStepViewController.swift; sourceTree = "<group>"; };
-		862CB3242252741A00C5F0A7 /* OnBoardingScreenPluginBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenPluginBaseViewController.swift; sourceTree = "<group>"; };
 		864F589A222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingScreenPluginDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864F58A0222D8F8A00CD2EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +55,7 @@
 		864F58BC222D8FB800CD2EF2 /* OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingScreenPlugin.h; sourceTree = "<group>"; };
 		864F58BF222D8FB800CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86A59B4A223197A300CED18F /* OnBoardingOneStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingOneStepViewModel.swift; sourceTree = "<group>"; };
+		86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
 		86B0D3EF22399BF60013FD3F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
@@ -175,7 +173,7 @@
 		86A59B502231C57800CED18F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				86A59B4A223197A300CED18F /* OnBoardingOneStepViewModel.swift */,
+				86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -196,7 +194,6 @@
 			children = (
 				86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */,
 				862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */,
-				862CB3242252741A00C5F0A7 /* OnBoardingScreenPluginBaseViewController.swift */,
 			);
 			name = "VIew Controllers";
 			sourceTree = "<group>";
@@ -518,9 +515,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39762D5F2256510100569847 /* NetworkService.swift in Sources */,
-				862CB3252252741A00C5F0A7 /* OnBoardingScreenPluginBaseViewController.swift in Sources */,
 				862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */,
-				86A59B4B223197A300CED18F /* OnBoardingOneStepViewModel.swift in Sources */,
+				86A59B4B223197A300CED18F /* OnBoardingViewModel.swift in Sources */,
 				39762D5A2256442B00569847 /* Segment.swift in Sources */,
 				86EEB18B2236EC030050B82A /* Category.swift in Sources */,
 				39762D5D225650D900569847 /* OnBoardingManager.swift in Sources */,

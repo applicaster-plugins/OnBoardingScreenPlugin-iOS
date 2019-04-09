@@ -12,9 +12,10 @@ import SwiftyJSON
 import ZappPlugins
 import ZappPushPluginsSDK
 
-struct OnBoardingOneStepViewModel {
+struct OnBoardingViewModel {
     let apiManager = OnBoardingManager.sharedInstance
     let isLoading = PublishSubject<Bool>()
+    let shouldRefresh = PublishSubject<Bool>()
     let completedProcessingTags = PublishSubject<Bool>()
     let availableLanguages = Variable<[String]>([])
     let categories = Variable<[Category]>([])
@@ -46,7 +47,38 @@ struct OnBoardingOneStepViewModel {
                         return category
                     }
                 }
+                //after we fetch the OBFF, check if user has persisted preference data and set it
+                self.prefillPersistedUserSelection()
             }
+        }
+    }
+    
+    func prefillPersistedUserSelection() {
+        guard  let userRecommendationTags = APKeychain.object(forKey: "userRecommendationTags") as? [String] else { return }
+        //we need to get the tags without the language code in the scenario that a user added tags to their preferences
+        //then changed the language on the device and re-launched on-boarding
+        var baseRecommendationTags: [String] = []
+        for segmentId in userRecommendationTags {
+            let splitSegmentId = segmentId.components(separatedBy: "-")
+            if let baseSegmentId = splitSegmentId.first {
+                baseRecommendationTags.append(baseSegmentId)
+            }
+        }
+        
+        var segmentsToPreselect: [Segment] = []
+        
+        for category in categories.value {
+            guard let segments = category.segments else { return }
+            for segment in segments {
+                if let segmentId = segment.id, baseRecommendationTags.contains(segmentId) {
+                    segmentsToPreselect.append(segment)
+                }
+            }
+        }
+        
+        if segmentsToPreselect.count > 0 {
+            segmentsSelected.value = segmentsToPreselect
+            self.shouldRefresh.on(.next(true))
         }
     }
     
@@ -110,9 +142,9 @@ struct OnBoardingOneStepViewModel {
         
         pushProvider.addTagsToDevice?(tagsToAdd) { (success, tags) in
             if success {
-                print("just keep execution")
+                // keep going
             } else {
-                print("Error - addTagsToDevice")
+                // no need to do anything at this time, user will see the default content as if they had skipped onboarding
             }
         }
     }
