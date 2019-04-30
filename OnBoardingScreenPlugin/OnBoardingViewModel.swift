@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import SwiftyJSON
+import ApplicasterSDK
 import ZappPlugins
 import ZappPushPluginsSDK
 
@@ -131,6 +132,7 @@ struct OnBoardingViewModel {
     
     func addTagsToKeychain(tagsToAdd: [String]) {
         APKeychain.setObject(tagsToAdd, forKey: "userRecommendationTags")
+        let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: tagsToAdd, objectType: [String].self)
     }
     
     func addTagsToDevice(tagsToAdd: [String]) {

@@ -8,13 +8,13 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "10.0.0"
+      xcode: "10.1.0"
     shell: /bin/bash --login -eo pipefail
     environment:
       - PROJECT_NAME: "OnBoardingScreenPlugin"
       - SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS"
       - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
-      - DEPLOY_VERSION: "0.4.0"
+      - DEPLOY_VERSION: "0.5.0"
       - DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySinglePlugin.sh"
     working_directory: ~/OnBoardingScreenPlugin
 
@@ -30,17 +30,17 @@ jobs:
       # Prepere Git and Submodules
       - restore_cache:
           name: Git - restore cache
-          key: Zapp-OnBoardingScreenPlugin-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          key: Zapp-OnBoardingScreenPlugin-v2-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
           keys:
-            - Zapp-OnBoardingScreenPlugin-v1-{{ .Branch }}-{{ .Revision }}
-            - Zapp-OnBoardingScreenPlugin-v1-{{ .Branch }}-
-            - Zapp-OnBoardingScreenPlugin-v1-
+            - Zapp-OnBoardingScreenPlugin-v2-{{ .Branch }}-{{ .Revision }}
+            - Zapp-OnBoardingScreenPlugin-v2-{{ .Branch }}-
+            - Zapp-OnBoardingScreenPlugin-v2-
 
       - checkout
 
       - save_cache:
           name: Git - save cache
-          key: Zapp-PlayerPlugins-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          key: Zapp-PlayerPlugins-v2-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
           paths:
             - ".git"
 
@@ -74,14 +74,14 @@ jobs:
 
       - save_cache:
           name: Bundler - save cache
-          key: Zapp-OnBoardingScreenPlugin-v1-{{ checksum "Gemfile.lock" }}
+          key: Zapp-OnBoardingScreenPlugin-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - /Users/distiller/.rubies/ruby-2.4.2/lib/ruby/gems/2.4.0/gems
 
       # Restore Cocoapods cache, save cache on lower level, after pod update
       - restore_cache:
           name: CocoaPods - restore cache
-          key: Zapp-OnBoardingScreenPlugin-CocoaPods-1
+          key: Zapp-OnBoardingScreenPlugin-CocoaPods-2
 
       - run:
           name: CocoaPods - version
@@ -103,7 +103,7 @@ jobs:
       # Cache CocoaPods
       - save_cache:
           name: CocoaPods - save cache
-          key: Zapp-OnBoardingScreenPlugin-CocoaPods-1
+          key: Zapp-OnBoardingScreenPlugin-CocoaPods-2
           paths:
             - "~/.cocoapods"
             - "Pods"
@@ -125,17 +125,6 @@ jobs:
              else
                echo "Branch is not master, deploy process will be skipped"
              fi
-
-      #- deploy:
-      #    name: Building OnBoardingScreenPlugin - enterprise build
-      #    command: |
-      #      if [ -z "$bundle_identifier" ]; then
-      #        echo "Bundle identifier NOT set! Enterprise Build will be skipped"
-      #      elif [ "$is_developement_environment" ]; then
-      #        echo "Building for external development environment! Enterprise Build will be skipped"
-      #      else
-      #        bundle exec fastlane ios enterprise
-      #      fi
 
       - store_test_results:
           name: Test results - collecting
