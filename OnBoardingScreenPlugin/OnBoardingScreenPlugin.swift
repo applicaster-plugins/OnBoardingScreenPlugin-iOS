@@ -53,7 +53,8 @@ import SwiftyJSON
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
         //if there is userRecommendationTags in KeyChain don't launch plugin at start-up
         if let userRecommendationTags = APKeychain.object(forKey: "userRecommendationTags") as? [String], let completion = completion {
-            let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: userRecommendationTags, objectType: [String].self)
+            let stringifiedTags = userRecommendationTags.description
+            let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: stringifiedTags, namespace: "onboarding")
             completion()
         } else {
             presentOnBoardingScreen(completion: completion)
