@@ -13,6 +13,7 @@
 		39762D612256511B00569847 /* NetworkURLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39762D602256511B00569847 /* NetworkURLRequestConvertible.swift */; };
 		39762D6322566FCB00569847 /* SegmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */; };
 		39762D652256710F00569847 /* SegmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39762D642256710F00569847 /* SegmentCollectionViewCell.swift */; };
+		44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */; };
 		862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */; };
 		864F589E222D8F8A00CD2EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */; };
 		864F58A1222D8F8A00CD2EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864F589F222D8F8A00CD2EF2 /* Main.storyboard */; };
@@ -27,40 +28,47 @@
 		86EEB16D2232DA250050B82A /* OnBoardingViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */; };
 		86EEB18B2236EC030050B82A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEB1882236EC030050B82A /* Category.swift */; };
 		A4701C1422136D15734137E7 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */; };
+		D70EDDE0E503F154638C2F43 /* Pods_OnBoardingScreenPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */; };
 		D9CE20F35305E86ADF16F5F8 /* Pods_CopaAmericaStatsScreenPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39762D592256442B00569847 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
-		39762D5C225650D900569847 /* OnBoardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingManager.swift; sourceTree = "<group>"; };
-		39762D5E2256510100569847 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		39762D602256511B00569847 /* NetworkURLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURLRequestConvertible.swift; sourceTree = "<group>"; };
-		39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentCollectionViewCell.xib; sourceTree = "<group>"; };
-		39762D642256710F00569847 /* SegmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		39762D592256442B00569847 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Segment.swift; path = OnBoardingScreenPlugin/Segment.swift; sourceTree = "<group>"; };
+		39762D5C225650D900569847 /* OnBoardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingManager.swift; path = OnBoardingScreenPlugin/OnBoardingManager.swift; sourceTree = "<group>"; };
+		39762D5E2256510100569847 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = OnBoardingScreenPlugin/NetworkService.swift; sourceTree = "<group>"; };
+		39762D602256511B00569847 /* NetworkURLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkURLRequestConvertible.swift; path = OnBoardingScreenPlugin/NetworkURLRequestConvertible.swift; sourceTree = "<group>"; };
+		39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SegmentCollectionViewCell.xib; path = OnBoardingScreenPlugin/SegmentCollectionViewCell.xib; sourceTree = "<group>"; };
+		39762D642256710F00569847 /* SegmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SegmentCollectionViewCell.swift; path = OnBoardingScreenPlugin/SegmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		4221FCFD73C3FCEE9404BDCB /* Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
 		4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62006335FEDF0E0A09BD9028 /* Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
 		665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingOneStepViewController.swift; sourceTree = "<group>"; };
+		7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
+		862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingOneStepViewController.swift; path = OnBoardingScreenPlugin/OnBoardingOneStepViewController.swift; sourceTree = "<group>"; };
 		864F589A222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingScreenPluginDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864F58A0222D8F8A00CD2EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenPlugin.swift; sourceTree = "<group>"; };
+		864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingScreenPlugin.swift; path = OnBoardingScreenPlugin/OnBoardingScreenPlugin.swift; sourceTree = "<group>"; };
 		864F58A7222D8F8A00CD2EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plugin_manifest.json; sourceTree = "<group>"; };
 		864F58AC222D8F8A00CD2EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864F58AF222D8F8A00CD2EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		864F58B1222D8F8B00CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864F58BC222D8FB800CD2EF2 /* OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingScreenPlugin.h; sourceTree = "<group>"; };
+		864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OnBoardingScreenPlugin.h; path = OnBoardingScreenPlugin/OnBoardingScreenPlugin.h; sourceTree = "<group>"; };
 		864F58BF222D8FB800CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
-		86B0D3EF22399BF60013FD3F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
-		86EEB1882236EC030050B82A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingViewModel.swift; path = OnBoardingScreenPlugin/OnBoardingViewModel.swift; sourceTree = "<group>"; };
+		86B0D3EF22399BF60013FD3F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryCollectionViewCell.swift; path = OnBoardingScreenPlugin/CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CategoryCollectionViewCell.xib; path = OnBoardingScreenPlugin/CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OnBoardingViewControllers.storyboard; path = OnBoardingScreenPlugin/OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
+		86EEB1882236EC030050B82A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = OnBoardingScreenPlugin/Category.swift; sourceTree = "<group>"; };
 		9D517C3E48DDC55E76FA12D1 /* Pods-CopaAmericaStatsScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4701C1422136D15734137E7 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework in Frameworks */,
+				44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9CE20F35305E86ADF16F5F8 /* Pods_CopaAmericaStatsScreenPlugin.framework in Frameworks */,
+				D70EDDE0E503F154638C2F43 /* Pods_OnBoardingScreenPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,8 @@
 			children = (
 				4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */,
 				688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */,
+				AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */,
+				B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +121,10 @@
 				9D517C3E48DDC55E76FA12D1 /* Pods-CopaAmericaStatsScreenPlugin.release.xcconfig */,
 				665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */,
 				62006335FEDF0E0A09BD9028 /* Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig */,
+				7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */,
+				3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */,
+				7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */,
+				481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -167,7 +183,8 @@
 			children = (
 				864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */,
 			);
-			path = manifest;
+			name = manifest;
+			path = OnBoardingScreenPlugin/manifest;
 			sourceTree = "<group>";
 		};
 		86A59B502231C57800CED18F /* View Models */ = {
@@ -335,17 +352,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CopaAmericaStatsScreenPlugin-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-OnBoardingScreenPlugin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,23 +370,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4D1F865055AEBF1821DFB8CB /* [CP] Check Pods Manifest.lock */ = {
@@ -381,17 +390,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CopaAmericaStatsScreenPluginDEMO-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-OnBoardingScreenPluginDEMO-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -403,23 +408,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDF206235B6220A244B7A9A6 /* [CP] Embed Pods Frameworks */ = {
@@ -427,21 +428,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${PODS_ROOT}/ApplicasterSDK/ApplicasterSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/CopaAmericaStatsScreenPlugin/CopaAmericaStatsScreenPlugin.framework",
 				"${BUILT_PRODUCTS_DIR}/FBNotifications/FBNotifications.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -449,32 +445,26 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-				"${PODS_ROOT}/ZappAnalyticsPluginsSDK/ZappAnalyticsPluginsSDK.framework",
-				"${PODS_ROOT}/ZappGeneralPluginsSDK/ZappGeneralPluginsSDK.framework",
-				"${PODS_ROOT}/ZappLoginPluginsSDK/ZappLoginPluginsSDK.framework",
-				"${PODS_ROOT}/ZappPlugins/ZappPlugins.framework",
-				"${PODS_ROOT}/ZappPushPluginsSDK/ZappPushPluginsSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/ZappAnalyticsPluginsSDK/ZappAnalyticsPluginsSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/ZappGeneralPluginsSDK/ZappGeneralPluginsSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/ZappLoginPluginsSDK/ZappLoginPluginsSDK.framework",
+				"${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework",
+				"${BUILT_PRODUCTS_DIR}/ZappPushPluginsSDK/ZappPushPluginsSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApplicasterSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CopaAmericaStatsScreenPlugin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBNotifications.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -482,7 +472,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
@@ -495,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -667,7 +656,7 @@
 		};
 		864F58B5222D8F8B00CD2EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */;
+			baseConfigurationReference = 7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,7 +675,7 @@
 		};
 		864F58B6222D8F8B00CD2EF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62006335FEDF0E0A09BD9028 /* Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig */;
+			baseConfigurationReference = 481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -705,7 +694,7 @@
 		};
 		864F58C6222D8FB800CD2EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4221FCFD73C3FCEE9404BDCB /* Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig */;
+			baseConfigurationReference = 7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -734,7 +723,7 @@
 		};
 		864F58C7222D8FB800CD2EF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D517C3E48DDC55E76FA12D1 /* Pods-CopaAmericaStatsScreenPlugin.release.xcconfig */;
+			baseConfigurationReference = 3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
