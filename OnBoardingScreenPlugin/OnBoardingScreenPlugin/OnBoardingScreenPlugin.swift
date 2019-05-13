@@ -82,9 +82,9 @@ import SwiftyJSON
     
     // MARK: ZPAdapterProtocol
     public func handleUrlScheme(_ params:NSDictionary) {
-        // xcrun simctl openurl booted "<urlScheme>://plugin?type=general&action=content_preferences"
+        // xcrun simctl openurl booted "<urlScheme>://plugin?type=general&action=ob_preferences"
         
-        if let type = params["type"] as? String, type == "general", let action = params["action"] as? String, action == "content_preferences" {
+        if let type = params["type"] as? String, type == "general", let action = params["action"] as? String, action == "ob_preferences" {
             presentOnBoardingScreen(completion: nil)
         }
     }

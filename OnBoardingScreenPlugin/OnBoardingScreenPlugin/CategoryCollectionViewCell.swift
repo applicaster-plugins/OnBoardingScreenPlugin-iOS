@@ -41,7 +41,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     private func updateUI() {
         guard let category = category, let titleDict = category.title, let langCode = langCode else { return }
         categoryLabel.text = titleDict["\(langCode)"]?.string ?? ""
-        categoryImageView.sd_setImage(with: URL(string: "\(category.imageUrl ?? "")"), placeholderImage: UIImage(named: "placeHolder"))
+        categoryImageView.sd_setImage(with: URL(string: "\(category.imageUrl ?? "")"), placeholderImage: UIImage(named: "ob_category_placeHolder"))
         
         if isCurrentlySelected {
             setSelectedStyle()

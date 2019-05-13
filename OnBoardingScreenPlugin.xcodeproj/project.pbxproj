@@ -13,6 +13,10 @@
 		39762D612256511B00569847 /* NetworkURLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39762D602256511B00569847 /* NetworkURLRequestConvertible.swift */; };
 		39762D6322566FCB00569847 /* SegmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */; };
 		39762D652256710F00569847 /* SegmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39762D642256710F00569847 /* SegmentCollectionViewCell.swift */; };
+		39C79A2E228A0DE10075CE69 /* ob_16_9_vertical_placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2A228A0DE00075CE69 /* ob_16_9_vertical_placeHolder.png */; };
+		39C79A2F228A0DE10075CE69 /* ob_like_icon_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2B228A0DE00075CE69 /* ob_like_icon_unselected.png */; };
+		39C79A30228A0DE10075CE69 /* ob_category_placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2C228A0DE10075CE69 /* ob_category_placeHolder.png */; };
+		39C79A31228A0DE10075CE69 /* ob_like_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */; };
 		44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */; };
 		862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */; };
 		864F589E222D8F8A00CD2EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */; };
@@ -39,6 +43,10 @@
 		39762D602256511B00569847 /* NetworkURLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkURLRequestConvertible.swift; path = OnBoardingScreenPlugin/NetworkURLRequestConvertible.swift; sourceTree = "<group>"; };
 		39762D6222566FCB00569847 /* SegmentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SegmentCollectionViewCell.xib; path = OnBoardingScreenPlugin/SegmentCollectionViewCell.xib; sourceTree = "<group>"; };
 		39762D642256710F00569847 /* SegmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SegmentCollectionViewCell.swift; path = OnBoardingScreenPlugin/SegmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		39C79A2A228A0DE00075CE69 /* ob_16_9_vertical_placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_16_9_vertical_placeHolder.png; path = OnBoardingScreenPlugin/ob_16_9_vertical_placeHolder.png; sourceTree = "<group>"; };
+		39C79A2B228A0DE00075CE69 /* ob_like_icon_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_like_icon_unselected.png; path = OnBoardingScreenPlugin/ob_like_icon_unselected.png; sourceTree = "<group>"; };
+		39C79A2C228A0DE10075CE69 /* ob_category_placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_category_placeHolder.png; path = OnBoardingScreenPlugin/ob_category_placeHolder.png; sourceTree = "<group>"; };
+		39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_like_icon_selected.png; path = OnBoardingScreenPlugin/ob_like_icon_selected.png; sourceTree = "<group>"; };
 		3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		4221FCFD73C3FCEE9404BDCB /* Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +111,17 @@
 			name = API;
 			sourceTree = "<group>";
 		};
+		39C79A29228A0D910075CE69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39C79A2A228A0DE00075CE69 /* ob_16_9_vertical_placeHolder.png */,
+				39C79A2C228A0DE10075CE69 /* ob_category_placeHolder.png */,
+				39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */,
+				39C79A2B228A0DE00075CE69 /* ob_like_icon_unselected.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		499E5199374C60705249D41E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +184,7 @@
 		864F58BD222D8FB800CD2EF2 /* OnBoardingScreenPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				39C79A29228A0D910075CE69 /* Resources */,
 				39762D5B225650B800569847 /* API */,
 				864F58CA222D917B00CD2EF2 /* manifest */,
 				864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */,
@@ -338,8 +358,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C79A31228A0DE10075CE69 /* ob_like_icon_selected.png in Resources */,
 				39762D6322566FCB00569847 /* SegmentCollectionViewCell.xib in Resources */,
+				39C79A2F228A0DE10075CE69 /* ob_like_icon_unselected.png in Resources */,
+				39C79A30228A0DE10075CE69 /* ob_category_placeHolder.png in Resources */,
 				86B0D3F222399BF60013FD3F /* CategoryCollectionViewCell.xib in Resources */,
+				39C79A2E228A0DE10075CE69 /* ob_16_9_vertical_placeHolder.png in Resources */,
 				86EEB16D2232DA250050B82A /* OnBoardingViewControllers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         isCurrentlySelected = false
-        segmentImageView.image = UIImage(named: "placeHolder")
+        segmentImageView.image = UIImage(named: "ob_16_9_vertical_placeHolder")
         containerView.layer.borderWidth = 0.0
         containerView.layer.borderColor = UIColor.clear.cgColor
     }
@@ -65,10 +65,8 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     
     private func updateUI() {
         guard let segment = segment else { return }
-        segmentImageView.sd_setImage(with: URL(string: "\(segment.imageUrl ?? "")"), placeholderImage: UIImage(named: "placeHolder"))
-        if let styles = OnBoardingManager.sharedInstance.styles, let iconImagePath = styles["iconImagePath"] as? String {
-            selectSegmentIconImageView.sd_setImage(with: URL(string: "\(iconImagePath)"), placeholderImage: UIImage(named: "placeHolder"))
-        }
+        segmentImageView.sd_setImage(with: URL(string: "\(segment.imageUrl ?? "")"), placeholderImage: UIImage(named: "ob_16_9_vertical_placeHolder"))
+        selectSegmentIconImageView.image = UIImage(named: "ob_like_icon_unselected")
         
         if isCurrentlySelected {
             setSelectedStyle()
