@@ -48,11 +48,8 @@
 		39C79A2C228A0DE10075CE69 /* ob_category_placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_category_placeHolder.png; path = OnBoardingScreenPlugin/ob_category_placeHolder.png; sourceTree = "<group>"; };
 		39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ob_like_icon_selected.png; path = OnBoardingScreenPlugin/ob_like_icon_selected.png; sourceTree = "<group>"; };
 		3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
-		4221FCFD73C3FCEE9404BDCB /* Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
 		4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62006335FEDF0E0A09BD9028 /* Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
-		665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPluginDEMO/Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +71,6 @@
 		86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CategoryCollectionViewCell.xib; path = OnBoardingScreenPlugin/CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OnBoardingViewControllers.storyboard; path = OnBoardingScreenPlugin/OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
 		86EEB1882236EC030050B82A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = OnBoardingScreenPlugin/Category.swift; sourceTree = "<group>"; };
-		9D517C3E48DDC55E76FA12D1 /* Pods-CopaAmericaStatsScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmericaStatsScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopaAmericaStatsScreenPlugin/Pods-CopaAmericaStatsScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,10 +132,6 @@
 		4B31282D792781D4FFE92C31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4221FCFD73C3FCEE9404BDCB /* Pods-CopaAmericaStatsScreenPlugin.debug.xcconfig */,
-				9D517C3E48DDC55E76FA12D1 /* Pods-CopaAmericaStatsScreenPlugin.release.xcconfig */,
-				665AE1135CBAAB393D580F8F /* Pods-CopaAmericaStatsScreenPluginDEMO.debug.xcconfig */,
-				62006335FEDF0E0A09BD9028 /* Pods-CopaAmericaStatsScreenPluginDEMO.release.xcconfig */,
 				7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */,
 				3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */,
 				7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */,
