@@ -31,9 +31,7 @@
 		86B0D3F222399BF60013FD3F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */; };
 		86EEB16D2232DA250050B82A /* OnBoardingViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */; };
 		86EEB18B2236EC030050B82A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEB1882236EC030050B82A /* Category.swift */; };
-		A4701C1422136D15734137E7 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */; };
 		D70EDDE0E503F154638C2F43 /* Pods_OnBoardingScreenPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */; };
-		D9CE20F35305E86ADF16F5F8 /* Pods_CopaAmericaStatsScreenPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4701C1422136D15734137E7 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework in Frameworks */,
 				44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CE20F35305E86ADF16F5F8 /* Pods_CopaAmericaStatsScreenPlugin.framework in Frameworks */,
 				D70EDDE0E503F154638C2F43 /* Pods_OnBoardingScreenPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,16 +172,16 @@
 		864F58BD222D8FB800CD2EF2 /* OnBoardingScreenPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				39C79A29228A0D910075CE69 /* Resources */,
 				39762D5B225650B800569847 /* API */,
+				864F58BF222D8FB800CD2EF2 /* Info.plist */,
 				864F58CA222D917B00CD2EF2 /* manifest */,
+				86EEB1962236ECE10050B82A /* Models */,
 				864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */,
 				864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */,
-				86EEB17B2232DAD40050B82A /* VIew Controllers */,
+				39C79A29228A0D910075CE69 /* Resources */,
 				86EEB1972236ED120050B82A /* UI */,
-				86EEB1962236ECE10050B82A /* Models */,
+				86EEB17B2232DAD40050B82A /* VIew Controllers */,
 				86A59B502231C57800CED18F /* View Models */,
-				864F58BF222D8FB800CD2EF2 /* Info.plist */,
 			);
 			path = OnBoardingScreenPlugin;
 			sourceTree = "<group>";
