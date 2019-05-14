@@ -8,14 +8,14 @@
     "platform": "ios",
     "author_name": "Marcos Reyes - Applicaster",
     "author_email": "m.reyes@applicaster.com",
-    "manifest_version": "1.0.1",
+    "manifest_version": "1.0.2",
     "name": "On-Boarding Screen Plugin",
     "description": "On-boarding loading hook plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user.",
     "type": "general",
     "identifier": "onboarding",
     "ui_builder_support": true,
     "dependency_name": "OnBoardingScreenPlugin",
-    "dependency_version": "1.0.1",
+    "dependency_version": "1.0.2",
     "whitelisted_account_ids": ["56e92d4b643037000b000000"],
     "min_zapp_sdk": "11.0.0-Dev",
     "deprecated_since_zapp_sdk": "",
@@ -28,22 +28,22 @@
             "tooltip_text": "On Boarding Feed Path"
         },
         {
-            "type": "color_picker",
+            "type": "colorpicker",
             "key": "backgroundColor",
             "tooltip_text": "Background color for the screen, to also be used on selected category labels."
         },
         {
-            "type": "color_picker",
+            "type": "colorpicker",
             "key": "titleColor",
             "tooltip_text": "Color to be used in main title label and in unselected category labels."
         },
         {
-            "type": "color_picker",
+            "type": "colorpicker",
             "key": "highlightColor",
             "tooltip_text": "Highlight color to be used in subtitle label, main action button and selected segments."
         },
         {
-            "type": "color_picker",
+            "type": "colorpicker",
             "key": "categoryBackgroundColor",
             "tooltip_text": "Background color to be used in category items."
         },
