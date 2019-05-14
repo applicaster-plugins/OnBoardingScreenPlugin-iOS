@@ -7,7 +7,6 @@ source 'git@github.com:applicaster/CocoaPods-Private.git'
 source 'git@github.com:applicaster/PluginsBuilderCocoaPods.git'
 source 'git@github.com:CocoaPods/Specs.git'
 
-
 def shared
   pod 'ApplicasterSDK'
   pod 'ZappPlugins'
@@ -17,11 +16,6 @@ def shared
   pod 'RxSwift', '~> 4.4.1'
   pod 'RxCocoa', '~> 4.4.1'
   pod 'SDWebImage', '~> 4.4.6'
-end
-
-target 'OnBoardingScreenPluginDEMO' do
-    pod 'OnBoardingScreenPlugin', :path => 'OnBoardingScreenPlugin.podspec'
-    shared
 end
 
 target 'OnBoardingScreenPlugin' do
@@ -34,9 +28,4 @@ post_install do |installer|
             config.build_settings['SWIFT_VERSION'] = '4.2'
         end
     end
-end
-
-pre_install do |installer|
-    # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
-    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
 end

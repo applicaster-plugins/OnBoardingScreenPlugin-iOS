@@ -17,13 +17,7 @@
 		39C79A2F228A0DE10075CE69 /* ob_like_icon_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2B228A0DE00075CE69 /* ob_like_icon_unselected.png */; };
 		39C79A30228A0DE10075CE69 /* ob_category_placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2C228A0DE10075CE69 /* ob_category_placeHolder.png */; };
 		39C79A31228A0DE10075CE69 /* ob_like_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */; };
-		44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */; };
 		862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */; };
-		864F589E222D8F8A00CD2EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */; };
-		864F58A1222D8F8A00CD2EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864F589F222D8F8A00CD2EF2 /* Main.storyboard */; };
-		864F58A8222D8F8A00CD2EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F58A7222D8F8A00CD2EF2 /* ViewController.swift */; };
-		864F58AD222D8F8A00CD2EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864F58AC222D8F8A00CD2EF2 /* Assets.xcassets */; };
-		864F58B0222D8F8B00CD2EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864F58AE222D8F8A00CD2EF2 /* LaunchScreen.storyboard */; };
 		864F58C0222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		864F58C9222D900A00CD2EF2 /* OnBoardingScreenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */; };
 		86A59B4B223197A300CED18F /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A59B4A223197A300CED18F /* OnBoardingViewModel.swift */; };
@@ -47,20 +41,11 @@
 		39C79A2D228A0DE10075CE69 /* ob_like_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ob_like_icon_selected.png; sourceTree = "<group>"; };
 		3E33DF0C0DE5D0BD68605819 /* Pods-OnBoardingScreenPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.release.xcconfig"; sourceTree = "<group>"; };
-		4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmericaStatsScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingOneStepViewController.swift; sourceTree = "<group>"; };
-		864F589A222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingScreenPluginDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		864F58A0222D8F8A00CD2EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenPlugin.swift; sourceTree = "<group>"; };
-		864F58A7222D8F8A00CD2EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = plugin_manifest.json; path = ../../manifest/plugin_manifest.json; sourceTree = "<group>"; };
-		864F58AC222D8F8A00CD2EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		864F58AF222D8F8A00CD2EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		864F58B1222D8F8B00CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plugin_manifest.json; sourceTree = "<group>"; };
 		864F58BC222D8FB800CD2EF2 /* OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingScreenPlugin.h; sourceTree = "<group>"; };
 		864F58BF222D8FB800CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,18 +55,9 @@
 		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
 		86EEB1882236EC030050B82A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPluginDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		864F5897222D8F8A00CD2EF2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44342ECE8F9CE47F8220C6D2 /* Pods_OnBoardingScreenPluginDEMO.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		864F58B9222D8FB800CD2EF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,10 +93,7 @@
 		499E5199374C60705249D41E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C4CFBD0E7AFA95CD60EFC50 /* Pods_CopaAmericaStatsScreenPlugin.framework */,
-				688429EFFB1A3D3DA1EFD688 /* Pods_CopaAmericaStatsScreenPluginDEMO.framework */,
 				AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */,
-				B6D46E309C28010681C15CF2 /* Pods_OnBoardingScreenPluginDEMO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +112,6 @@
 		864F5891222D8F8A00CD2EF2 = {
 			isa = PBXGroup;
 			children = (
-				864F589C222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO */,
 				864F58BD222D8FB800CD2EF2 /* OnBoardingScreenPlugin */,
 				864F589B222D8F8A00CD2EF2 /* Products */,
 				4B31282D792781D4FFE92C31 /* Pods */,
@@ -150,23 +122,9 @@
 		864F589B222D8F8A00CD2EF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				864F589A222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO.app */,
 				864F58BC222D8FB800CD2EF2 /* OnBoardingScreenPlugin.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		864F589C222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO */ = {
-			isa = PBXGroup;
-			children = (
-				864F589D222D8F8A00CD2EF2 /* AppDelegate.swift */,
-				864F589F222D8F8A00CD2EF2 /* Main.storyboard */,
-				864F58A7222D8F8A00CD2EF2 /* ViewController.swift */,
-				864F58AC222D8F8A00CD2EF2 /* Assets.xcassets */,
-				864F58AE222D8F8A00CD2EF2 /* LaunchScreen.storyboard */,
-				864F58B1222D8F8B00CD2EF2 /* Info.plist */,
-			);
-			path = OnBoardingScreenPluginDEMO;
 			sourceTree = "<group>";
 		};
 		864F58BD222D8FB800CD2EF2 /* OnBoardingScreenPlugin */ = {
@@ -191,8 +149,7 @@
 			children = (
 				864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */,
 			);
-			name = manifest;
-			path = OnBoardingScreenPlugin/manifest;
+			path = manifest;
 			sourceTree = "<group>";
 		};
 		86A59B502231C57800CED18F /* View Models */ = {
@@ -254,26 +211,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		864F5899222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 864F58B4222D8F8B00CD2EF2 /* Build configuration list for PBXNativeTarget "OnBoardingScreenPluginDEMO" */;
-			buildPhases = (
-				4D1F865055AEBF1821DFB8CB /* [CP] Check Pods Manifest.lock */,
-				864F5896222D8F8A00CD2EF2 /* Sources */,
-				864F5897222D8F8A00CD2EF2 /* Frameworks */,
-				864F5898222D8F8A00CD2EF2 /* Resources */,
-				EDF206235B6220A244B7A9A6 /* [CP] Embed Pods Frameworks */,
-				5F3A07617183AB73CC974FDC /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OnBoardingScreenPluginDEMO;
-			productName = CopaAmericaStatsScreenPlugin;
-			productReference = 864F589A222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO.app */;
-			productType = "com.apple.product-type.application";
-		};
 		864F58BB222D8FB800CD2EF2 /* OnBoardingScreenPlugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864F58C5222D8FB800CD2EF2 /* Build configuration list for PBXNativeTarget "OnBoardingScreenPlugin" */;
@@ -304,9 +241,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Applicaster;
 				TargetAttributes = {
-					864F5899222D8F8A00CD2EF2 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					864F58BB222D8FB800CD2EF2 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -325,23 +259,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				864F5899222D8F8A00CD2EF2 /* OnBoardingScreenPluginDEMO */,
 				864F58BB222D8FB800CD2EF2 /* OnBoardingScreenPlugin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		864F5898222D8F8A00CD2EF2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864F58A1222D8F8A00CD2EF2 /* Main.storyboard in Resources */,
-				864F58B0222D8F8B00CD2EF2 /* LaunchScreen.storyboard in Resources */,
-				864F58AD222D8F8A00CD2EF2 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		864F58BA222D8FB800CD2EF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,120 +320,9 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPlugin/Pods-OnBoardingScreenPlugin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4D1F865055AEBF1821DFB8CB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OnBoardingScreenPluginDEMO-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F3A07617183AB73CC974FDC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDF206235B6220A244B7A9A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${PODS_ROOT}/ApplicasterSDK/ApplicasterSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/FBNotifications/FBNotifications.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
-				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-				"${BUILT_PRODUCTS_DIR}/ZappAnalyticsPluginsSDK/ZappAnalyticsPluginsSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/ZappGeneralPluginsSDK/ZappGeneralPluginsSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/ZappLoginPluginsSDK/ZappLoginPluginsSDK.framework",
-				"${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework",
-				"${BUILT_PRODUCTS_DIR}/ZappPushPluginsSDK/ZappPushPluginsSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApplicasterSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBNotifications.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappAnalyticsPluginsSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappGeneralPluginsSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappLoginPluginsSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappPlugins.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappPushPluginsSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		864F5896222D8F8A00CD2EF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864F58A8222D8F8A00CD2EF2 /* ViewController.swift in Sources */,
-				864F589E222D8F8A00CD2EF2 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		864F58B8222D8FB800CD2EF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,25 +341,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		864F589F222D8F8A00CD2EF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				864F58A0222D8F8A00CD2EF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		864F58AE222D8F8A00CD2EF2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				864F58AF222D8F8A00CD2EF2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		864F58B2222D8F8B00CD2EF2 /* Debug */ = {
@@ -666,44 +459,6 @@
 			};
 			name = Release;
 		};
-		864F58B5222D8F8B00CD2EF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = OnBoardingScreenPlugin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.OnBoardingScreenPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		864F58B6222D8F8B00CD2EF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 481CCA6F03975F951A150830 /* Pods-OnBoardingScreenPluginDEMO.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = OnBoardingScreenPlugin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.OnBoardingScreenPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		864F58C6222D8FB800CD2EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7187CB2C6D3038BBC2A18FDC /* Pods-OnBoardingScreenPlugin.debug.xcconfig */;
@@ -770,15 +525,6 @@
 			buildConfigurations = (
 				864F58B2222D8F8B00CD2EF2 /* Debug */,
 				864F58B3222D8F8B00CD2EF2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		864F58B4222D8F8B00CD2EF2 /* Build configuration list for PBXNativeTarget "OnBoardingScreenPluginDEMO" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				864F58B5222D8F8B00CD2EF2 /* Debug */,
-				864F58B6222D8F8B00CD2EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
