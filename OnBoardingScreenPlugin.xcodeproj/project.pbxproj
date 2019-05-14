@@ -45,7 +45,6 @@
 		7E3389174FE049A44E5C11EC /* Pods-OnBoardingScreenPluginDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnBoardingScreenPluginDEMO/Pods-OnBoardingScreenPluginDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 		862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingOneStepViewController.swift; sourceTree = "<group>"; };
 		864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenPlugin.swift; sourceTree = "<group>"; };
-		864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plugin_manifest.json; sourceTree = "<group>"; };
 		864F58BC222D8FB800CD2EF2 /* OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnBoardingScreenPlugin.h; sourceTree = "<group>"; };
 		864F58BF222D8FB800CD2EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +131,6 @@
 			children = (
 				39762D5B225650B800569847 /* API */,
 				864F58BF222D8FB800CD2EF2 /* Info.plist */,
-				864F58CA222D917B00CD2EF2 /* manifest */,
 				86EEB1962236ECE10050B82A /* Models */,
 				864F58BE222D8FB800CD2EF2 /* OnBoardingScreenPlugin.h */,
 				864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */,
@@ -142,14 +140,6 @@
 				86A59B502231C57800CED18F /* View Models */,
 			);
 			path = OnBoardingScreenPlugin;
-			sourceTree = "<group>";
-		};
-		864F58CA222D917B00CD2EF2 /* manifest */ = {
-			isa = PBXGroup;
-			children = (
-				864F58AB222D8F8A00CD2EF2 /* plugin_manifest.json */,
-			);
-			path = manifest;
 			sourceTree = "<group>";
 		};
 		86A59B502231C57800CED18F /* View Models */ = {
