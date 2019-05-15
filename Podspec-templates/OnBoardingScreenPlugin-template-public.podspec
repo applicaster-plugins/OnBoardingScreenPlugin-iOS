@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.platform  = :ios, '__ios_platform_version__'
   s.summary = "__framework_name__"
   s.description = "__framework_name__ container."
-  s.homepage  = "https://github.com/applicaster/__framework_name__-iOS"
+  s.homepage  = "https://github.com/applicaster-plugins/__framework_name__-iOS"
   s.license = 'CMPS'
   s.author = { "cmps" => "Applicaster LTD." }
   s.source = {
