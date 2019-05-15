@@ -1,13 +1,13 @@
 platform :ios, '10.0'
-use_frameworks!
-install! 'cocoapods', :deterministic_uuids => false
 
 source 'git@github.com:applicaster/CocoaPods.git'
 source 'git@github.com:applicaster/CocoaPods-Private.git'
 source 'git@github.com:applicaster/PluginsBuilderCocoaPods.git'
 source 'git@github.com:CocoaPods/Specs.git'
 
-def shared
+target 'OnBoardingScreenPlugin' do
+  use_frameworks!
+  
   pod 'ApplicasterSDK'
   pod 'ZappPlugins'
   pod 'MBProgressHUD'
@@ -16,10 +16,6 @@ def shared
   pod 'RxSwift', '~> 4.4.1'
   pod 'RxCocoa', '~> 4.4.1'
   pod 'SDWebImage', '~> 4.4.6'
-end
-
-target 'OnBoardingScreenPlugin' do
-  shared
 end
 
 post_install do |installer|
