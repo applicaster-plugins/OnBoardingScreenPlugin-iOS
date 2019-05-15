@@ -136,7 +136,7 @@
 				864F58A6222D8F8A00CD2EF2 /* OnBoardingScreenPlugin.swift */,
 				39C79A29228A0D910075CE69 /* Resources */,
 				86EEB1972236ED120050B82A /* UI */,
-				86EEB17B2232DAD40050B82A /* VIew Controllers */,
+				86EEB17B2232DAD40050B82A /* View Controllers */,
 				86A59B502231C57800CED18F /* View Models */,
 			);
 			path = OnBoardingScreenPlugin;
@@ -161,13 +161,13 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		86EEB17B2232DAD40050B82A /* VIew Controllers */ = {
+		86EEB17B2232DAD40050B82A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */,
 				862CB322224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift */,
 			);
-			name = "VIew Controllers";
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		86EEB1962236ECE10050B82A /* Models */ = {

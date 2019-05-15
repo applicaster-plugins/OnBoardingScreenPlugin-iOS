@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "OnBoardingScreenPlugin"
-    s.version          = '1.0.9'
+    s.version          = '1.0.10'
     s.summary          = "On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS."
     s.description      = <<-DESC
     On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS.
@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   
     s.platform     = :ios, '10.0'
     s.requires_arc = true
-
-    s.resources = ["OnBoardingScreenPlugin/*.{xib,storyboard}"]
+    s.resources = ["OnBoardingScreenPlugin/*.{xib,storyboard,png,ttf,jpg}"]
     s.public_header_files = 'OnBoardingScreenPlugin/*.h'
     s.source_files = 'OnBoardingScreenPlugin/*.{swift,h,m}'
 

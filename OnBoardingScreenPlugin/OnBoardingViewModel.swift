@@ -50,6 +50,9 @@ struct OnBoardingViewModel {
                 }
                 //after we fetch the OBFF, check if user has persisted preference data and set it
                 self.prefillPersistedUserSelection()
+            } else {
+                //if there is a problem with the JSON OnBoardingFeed, just proceed
+                self.completedProcessingTags.on(.next(true))
             }
         }
     }
