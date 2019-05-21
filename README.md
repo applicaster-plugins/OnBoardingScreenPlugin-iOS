@@ -1,7 +1,6 @@
 # On Boarding Loading Hook Screen Plugin for iOS
 On Boarding Loading Hook Screen Plugin that uses SessionStorage and APKeychain to store user preferences. This plugin needs a JSON feed to display the different options to the user. This plugin also registers user for PushNotifications segments if a PushProvider is configured. This plugin uses the ISO 639-1 language code to ensure tailored content and push notifications are sent in device's locale.
 
-*Note: The setup/creation of the segments on the PushProvider side are done independently of this plugin but they MUST match the IDs of the onBoardingFeed*
 
 
 ### Change History
@@ -20,7 +19,6 @@ Javier Casaudoumecq  | j.casaudoumecq@applicaster.com
 * [Structure of onBoardingFeed](#on-boarding-flow-diagram)
 * [Minimum Requirements](#minimum-requirements)
 * [Structure of onBoardingFeed](#structure-on-boarding-feed)
-* [Setting up segments with PushProvider](#setting-up-segments)
 * [Plugin Configuration](#plugin-configuration)
 * [Plugin Configuration - Visual Aid](#configuration-visual-aid)
 * [Launching through URL Scheme](#launching-through-url)
@@ -229,8 +227,6 @@ Both of these feed samples are shown below as well as how the plugin will look w
 }
 ```
 
-## <a name="setting-up-segments"></a>Setting up segments with Push Provider
-The segments created in the Push Provider MUST match the IDs in the onBoardingFeed.
 
 ## <a name="plugin-configuration"></a>Plugin Configuration
 The look and feel of this plugin can easily be updated to match your desired branding, inlcuding colors, icons and images.
