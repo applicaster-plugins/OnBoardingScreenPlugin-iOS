@@ -244,7 +244,7 @@ These are the parameters that are configurable (you can find a screenshot furthe
 
 `applyBorder`: If enabled, a border is applied to selected segments. Using the highlight color.
 
-`ios_assets_bundle`: .zip file containing required assets for Plugin. Folder must contain:
+`ios_assets_bundle`: .zip file containing required assets for Plugin. `.zip` file must contain:
 
 ```
 ob_16_9_vertical_placeHolder.png, ob_16_9_vertical_placeHolder@2x.png,

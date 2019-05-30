@@ -41,7 +41,14 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     private func updateUI() {
         guard let category = category, let titleDict = category.title, let langCode = langCode else { return }
         categoryLabel.text = titleDict["\(langCode)"]?.string ?? ""
-        categoryImageView.sd_setImage(with: URL(string: "\(category.imageUrl ?? "")"), placeholderImage: UIImage(named: "ob_category_placeHolder"))
+
+        var placeHolderImage = UIImage(named: "ob_category_placeHolder")
+        if placeHolderImage == nil {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_category_placeHolder", ofType: "png") {
+                placeHolderImage = UIImage(contentsOfFile: path)
+            }
+        }
+        categoryImageView.sd_setImage(with: URL(string: "\(category.imageUrl ?? "")"), placeholderImage: placeHolderImage)
         
         if isCurrentlySelected {
             setSelectedStyle()

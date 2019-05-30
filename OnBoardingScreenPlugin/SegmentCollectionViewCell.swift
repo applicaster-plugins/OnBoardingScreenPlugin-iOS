@@ -28,7 +28,15 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         isCurrentlySelected = false
-        segmentImageView.image = UIImage(named: "ob_16_9_vertical_placeHolder")
+
+        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeHolder")
+        if placeHolderImage == nil {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeHolder", ofType: "png") {
+                placeHolderImage = UIImage(contentsOfFile: path)
+            }
+        }
+        segmentImageView.image = placeHolderImage
+        segmentImageView.contentMode = .scaleAspectFill
         containerView.layer.borderWidth = 0.0
         containerView.layer.borderColor = UIColor.clear.cgColor
     }
@@ -65,8 +73,15 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     
     private func updateUI() {
         guard let segment = segment else { return }
-        segmentImageView.sd_setImage(with: URL(string: "\(segment.imageUrl ?? "")"), placeholderImage: UIImage(named: "ob_16_9_vertical_placeHolder"))
-        selectSegmentIconImageView.image = UIImage(named: "ob_like_icon_unselected")
+        
+        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeHolder")
+        if placeHolderImage == nil {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeHolder", ofType: "png") {
+                placeHolderImage = UIImage(contentsOfFile: path)
+            }
+        }
+        segmentImageView.sd_setImage(with: URL(string: "\(segment.imageUrl ?? "")"), placeholderImage: placeHolderImage)
+        setOBLikeIcon(selected: false)
         
         if isCurrentlySelected {
             setSelectedStyle()
@@ -77,7 +92,8 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     
     private func setSelectedStyle() {
         guard let styles = OnBoardingManager.sharedInstance.styles else { return }
-        selectSegmentIconImageView.image = UIImage(named: "ob_like_icon_selected")
+        setOBLikeIcon(selected: true)
+        
         var highlightColor: UIColor = UIColor.clear
         
         if let color = styles["highlightColor"] as? String {
@@ -93,11 +109,23 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     private func setUnselectedStyle() {
         containerView.layer.borderWidth = 0.0
         containerView.layer.borderColor = UIColor.clear.cgColor
-        selectSegmentIconImageView.image = UIImage(named: "ob_like_icon_unselected")
+        setOBLikeIcon(selected: false)
         
         guard let styles = OnBoardingManager.sharedInstance.styles else { return }
         if let backgroundColor = styles["backgroundColor"] as? String {
             selectSegmentIconBgView.backgroundColor = UIColor(hex: backgroundColor).withAlphaComponent(0.4)
+        }
+    }
+    
+    private func setOBLikeIcon(selected: Bool) {
+        let obIconFilename: String = selected ? "ob_like_icon_selected" : "ob_like_icon_unselected"
+        
+        //if custom image was uploaded, it will be in Resources folder, if not, load resource from plugin files
+        let obLikeIconUnselected = UIImage(named: obIconFilename)
+        if obLikeIconUnselected != nil {
+            selectSegmentIconImageView.image = UIImage(named: obIconFilename)
+        } else if let path = Bundle(for: self.classForCoder).path(forResource: obIconFilename, ofType: "png") {
+            selectSegmentIconImageView.image = UIImage(contentsOfFile: path)
         }
     }
 }
