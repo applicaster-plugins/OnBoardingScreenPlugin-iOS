@@ -42,9 +42,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         guard let category = category, let titleDict = category.title, let langCode = langCode else { return }
         categoryLabel.text = titleDict["\(langCode)"]?.string ?? ""
 
-        var placeHolderImage = UIImage(named: "ob_category_placeHolder")
+        var placeHolderImage = UIImage(named: "ob_category_placeholder")
         if placeHolderImage == nil {
-            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_category_placeHolder", ofType: "png") {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_category_placeholder", ofType: "png") {
                 placeHolderImage = UIImage(contentsOfFile: path)
             }
         }

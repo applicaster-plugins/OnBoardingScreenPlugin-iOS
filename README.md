@@ -247,13 +247,13 @@ These are the parameters that are configurable (you can find a screenshot furthe
 `ios_assets_bundle`: .zip file containing required assets for Plugin. `.zip` file must contain:
 
 ```
-ob_16_9_vertical_placeHolder.png, ob_16_9_vertical_placeHolder@2x.png,
+ob_16_9_vertical_placeholder.png, ob_16_9_vertical_placeholder@2x.png,
 
 ob_like_icon_selected.png, ob_like_icon_selected@2x.png,
 
 ob_like_icon_unselected.png, ob_like_icon_unselected@2x.png,
 
-ob_category_placeHolder.png, ob_category_placeHolder@2x.png
+ob_category_placeholder.png, ob_category_placeholder@2x.png
 
 ```
 

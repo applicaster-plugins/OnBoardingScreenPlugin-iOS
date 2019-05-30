@@ -29,9 +29,9 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         isCurrentlySelected = false
 
-        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeHolder")
+        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeholder")
         if placeHolderImage == nil {
-            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeHolder", ofType: "png") {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeholder", ofType: "png") {
                 placeHolderImage = UIImage(contentsOfFile: path)
             }
         }
@@ -74,9 +74,9 @@ class SegmentCollectionViewCell: UICollectionViewCell {
     private func updateUI() {
         guard let segment = segment else { return }
         
-        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeHolder")
+        var placeHolderImage = UIImage(named: "ob_16_9_vertical_placeholder")
         if placeHolderImage == nil {
-            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeHolder", ofType: "png") {
+            if let path = Bundle(for: self.classForCoder).path(forResource: "ob_16_9_vertical_placeholder", ofType: "png") {
                 placeHolderImage = UIImage(contentsOfFile: path)
             }
         }
