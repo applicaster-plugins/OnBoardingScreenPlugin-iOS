@@ -22,6 +22,7 @@ struct OnBoardingViewModel {
     let categories = Variable<[Category]>([])
     let categorySelectedIndex = Variable<Int>(0)
     let segmentsSelected = Variable<[Segment]>([])
+    let segmentsToUnregister = Variable<[Segment]>([])
     let onboardingTexts = Variable<[String:JSON]>([:])
     
     func fetch() {
@@ -92,13 +93,26 @@ struct OnBoardingViewModel {
     
     func addRemoveSegmentIdSelected(segment: Segment) {
         var currentSegmentsSelected = segmentsSelected.value
+        var currentSegmentsToUnregister = segmentsToUnregister.value
         
         if let indexFound = currentSegmentsSelected.index(where: {$0.id == segment.id}) {
             currentSegmentsSelected.remove(at: indexFound)
+            currentSegmentsToUnregister.append(segment)
             self.segmentsSelected.value = currentSegmentsSelected
+            self.segmentsToUnregister.value = currentSegmentsToUnregister
         } else {
+            removeSegmentIfReaddedToTags(segment)
             currentSegmentsSelected.append(segment)
             self.segmentsSelected.value = currentSegmentsSelected
+        }
+    }
+    
+    func removeSegmentIfReaddedToTags(_ segment: Segment) {
+        var currentSegmentsToUnregister = segmentsToUnregister.value
+        
+        if let indexFound = currentSegmentsToUnregister.index(where: {$0.id == segment.id}) {
+            currentSegmentsToUnregister.remove(at: indexFound)
+            self.segmentsToUnregister.value = currentSegmentsToUnregister
         }
     }
     
@@ -114,10 +128,11 @@ struct OnBoardingViewModel {
     }
     
     func processSelectedTags() {
+        // Tags to ADD
         var tagsToAdd: [String] = []
         
         //we still set an empty userRecommendationTags array to prevent plugin from launching every time
-        if segmentsSelected.value.count == 0 {
+        if (segmentsSelected.value.count == 0) && (segmentsToUnregister.value.count == 0) {
             addTagsToKeychain(tagsToAdd: tagsToAdd)
             completedProcessingTags.on(.next(true))
             return
@@ -130,6 +145,20 @@ struct OnBoardingViewModel {
         }
         addTagsToKeychain(tagsToAdd: tagsToAdd)
         addTagsToDevice(tagsToAdd: tagsToAdd)
+        
+        // Tags to REMOVE
+        if segmentsToUnregister.value.count != 0 {
+            var tagsToRemove: [String] = []
+            
+            for segment in segmentsToUnregister.value {
+                if let currentSegmentId = segment.id {
+                    tagsToRemove.append("\(currentSegmentId)-\(languageCodeToUse())")
+                }
+            }
+            removeTagsFromDevice(tagsToRemove: tagsToRemove)
+        }
+        
+        //complete processing flag
         completedProcessingTags.on(.next(true))
     }
     
@@ -145,8 +174,29 @@ struct OnBoardingViewModel {
             pushProvider.responds(to: #selector(ZPPushProviderProtocol.addTagsToDevice(_:completion:))) else {
                 return
         }
+        guard tagsToAdd.count > 0 else { return }
         
+        //print("|||OB===>> addedTags: \(tagsToAdd)")
         pushProvider.addTagsToDevice?(tagsToAdd) { (success, tags) in
+            if success {
+                // keep going
+            } else {
+                // no need to do anything at this time, user will see the default content as if they had skipped onboarding
+            }
+        }
+    }
+    
+    
+    func removeTagsFromDevice(tagsToRemove: [String]) {
+        let pushProviders = ZPPushNotificationManager.sharedInstance.getProviders()
+        guard let pushProvider = pushProviders.first,
+            pushProvider.responds(to: #selector(ZPPushProviderProtocol.addTagsToDevice(_:completion:))) else {
+                return
+        }
+        guard tagsToRemove.count > 0 else { return }
+        
+        //print("|||OB===>> removedTags: \(tagsToRemove)")
+        pushProvider.removeTagsToDevice?(tagsToRemove) { (success, tags) in
             if success {
                 // keep going
             } else {
