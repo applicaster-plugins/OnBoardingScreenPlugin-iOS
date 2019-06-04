@@ -165,7 +165,8 @@ struct OnBoardingViewModel {
     func addTagsToKeychain(tagsToAdd: [String]) {
         APKeychain.setObject(tagsToAdd, forKey: "userRecommendationTags")
         let stringifiedTags = tagsToAdd.description
-        let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: stringifiedTags, namespace: "onboarding")
+        //TODO: enable SessionStorage once re-factored SessionStorage is in stable SDK
+        //let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: stringifiedTags, namespace: "onboarding")
     }
     
     func addTagsToDevice(tagsToAdd: [String]) {
