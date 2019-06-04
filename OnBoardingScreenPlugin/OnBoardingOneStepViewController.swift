@@ -40,6 +40,18 @@ class OnBoardingOneStepViewController: UIViewController {
         }
     }
     
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    func adaptivePresentationStyleForPresentationController(_ controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
     private func styleUI() {
         topTitleLabel.text = ""
         hightlightTitleLabel.text = ""
