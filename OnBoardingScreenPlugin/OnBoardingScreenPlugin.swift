@@ -69,15 +69,9 @@ import SwiftyJSON
         viewController.viewModel = viewModel
 
         //present OnBoardingVC
-        var topmostViewController = UIApplication.shared.windows.first?.rootViewController
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            while topmostViewController?.presentedViewController != nil {
-                topmostViewController = topmostViewController?.presentedViewController
-            }
-            
-            if let vc = topmostViewController {
-                vc.present(viewController, animated: true, completion: nil)
-            }
+        //delay needed because navigationDelegate is not always instantiated when launching onBoarding at app launch
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
+            ZAAppConnector.sharedInstance().navigationDelegate.topmostModal().present(viewController, animated: true, completion: nil)
         }
     }
     

@@ -193,7 +193,13 @@ extension OnBoardingOneStepViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case categoryCollectionView:
-            return (viewModel?.categories.value.count ?? 0)
+            let categoriesCount = viewModel?.categories.value.count ?? 0
+            
+            if categoriesCount > 1 {
+                return categoriesCount
+            } else {
+                return 0
+            }
         case segmentsCollectionView:
             let index = viewModel?.categorySelectedIndex.value ?? 0
             if let category = viewModel?.categories.value[safe: index] {
@@ -277,7 +283,13 @@ extension OnBoardingOneStepViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView {
         case categoryCollectionView:
-            return CGSize(width: getCategoryCellWidthtForItemAt(indexPath: indexPath), height: 40)
+            let categoriesCount = viewModel?.categories.value.count ?? 0
+            
+            if categoriesCount > 1 {
+                return CGSize(width: getCategoryCellWidthtForItemAt(indexPath: indexPath), height: 40)
+            } else {
+                return .zero
+            }
         case segmentsCollectionView:
             return CGSize(width: 95, height: 128)
         default:

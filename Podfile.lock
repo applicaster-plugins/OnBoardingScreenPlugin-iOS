@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
-  - ApplicasterSDK (9.4.5):
+  - ApplicasterSDK (9.5.0):
     - Alamofire (= 4.8.2)
     - CocoaLumberjack/Swift (= 3.4.2)
     - FBNotifications (= 1.0.1)
@@ -38,9 +38,9 @@ PODS:
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.4.2):
     - RxAtomic (>= 4.4.2, ~> 4.4)
-  - SDWebImage (4.4.6):
-    - SDWebImage/Core (= 4.4.6)
-  - SDWebImage/Core (4.4.6)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
   - SSZipArchive (2.1.0)
   - SwiftyJSON (4.2.0)
   - Toaster (2.2.0.0)
@@ -102,7 +102,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  ApplicasterSDK: 12c983c5183b87f5f7e6e9d0aeb1f2e5a4ced19d
+  ApplicasterSDK: 360f685b32d6491e03628ce854e63a1c0d1b76f6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   FBNotifications: 3f1a9e43ffa2979a685eec29c960ca6a15c70be9
@@ -113,7 +113,7 @@ SPEC CHECKSUMS:
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SSZipArchive: 1e8e53dcb11bca3ded4738958dc49fc467320a14
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toaster: 7464b87db5bd9453043bd3cf0fc79219cc9803f1
