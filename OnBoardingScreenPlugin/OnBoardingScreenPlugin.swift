@@ -25,6 +25,7 @@ import SwiftyJSON
         public static let titleColor = "titleColor"
         public static let categoryBackgroundColor = "categoryBackgroundColor"
         public static let applyBorder = "applyBorder"
+        public static let numberOfColumns = "numberOfColumns"
     }
     
     public required convenience init(configurationJSON: NSDictionary?) {
@@ -37,12 +38,14 @@ import SwiftyJSON
         let titleColor = configurationJSON?[PluginConfiguration.titleColor] as? String ?? "#000000"
         let categoryBackgroundColor = configurationJSON?[PluginConfiguration.categoryBackgroundColor] as? String ?? "#DCDCDC"
         let applyBorder = configurationJSON?[PluginConfiguration.applyBorder] as? Bool ?? false
+        let numColumns = configurationJSON?[PluginConfiguration.numberOfColumns] as? String ?? "3"
         
         let styles: [String: AnyObject] = [PluginConfiguration.backgroundColor: backgroundColor as AnyObject,
                                            PluginConfiguration.highlightColor: highlightColor as AnyObject,
                                            PluginConfiguration.titleColor: titleColor as AnyObject,
                                            PluginConfiguration.categoryBackgroundColor: categoryBackgroundColor as AnyObject,
-                                           PluginConfiguration.applyBorder: applyBorder as AnyObject]
+                                           PluginConfiguration.applyBorder: applyBorder as AnyObject,
+                                           PluginConfiguration.numberOfColumns: numColumns as AnyObject]
         OnBoardingManager.sharedInstance.styles = styles
     }
     

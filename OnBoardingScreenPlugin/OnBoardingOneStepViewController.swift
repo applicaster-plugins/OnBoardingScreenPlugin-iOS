@@ -291,9 +291,19 @@ extension OnBoardingOneStepViewController: UICollectionViewDelegateFlowLayout {
                 return .zero
             }
         case segmentsCollectionView:
-            return CGSize(width: 95, height: 128)
+            var numColumns = 3
+            if let value = OnBoardingManager.sharedInstance.styles?["numberOfColumns"] as? String, let cols = Int(value) {
+                numColumns = cols
+            }
+            
+            let ratio = CGFloat(95.0/128.0)
+            let width = collectionView.frame.width / CGFloat(numColumns)
+            let height = width / ratio
+            
+            //return CGSize(width: 95, height: 128)
+            return CGSize(width: width, height: height)
         default:
-            return CGSize(width: 95, height: 128)
+            return .zero
         }
     }
     
@@ -302,10 +312,19 @@ extension OnBoardingOneStepViewController: UICollectionViewDelegateFlowLayout {
         case categoryCollectionView:
             return UIEdgeInsets(top: 10, left: 24, bottom: 10, right: 24)
         case segmentsCollectionView:
-            return UIEdgeInsets(top: 10, left: 24, bottom: 90, right: 24)
+            return .zero//UIEdgeInsets(top: 10, left: 24, bottom: 90, right: 24)
         default:
-            return UIEdgeInsets(top: 10, left: 10, bottom: 100, right: 10)
+            //return UIEdgeInsets(top: 10, left: 10, bottom: 100, right: 10)
+            return .zero
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 
