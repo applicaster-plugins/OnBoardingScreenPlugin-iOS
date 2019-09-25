@@ -8,14 +8,14 @@
     "platform": "ios",
     "author_name": "Marcos Reyes - Applicaster",
     "author_email": "m.reyes@applicaster.com",
-    "manifest_version": "1.0.17",
+    "manifest_version": "1.0.18",
     "name": "On-Boarding Screen Plugin",
     "description": "On-boarding loading hook plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user.",
     "type": "general",
     "identifier": "onboarding",
     "ui_builder_support": true,
     "dependency_name": "OnBoardingScreenPlugin",
-    "dependency_version": "1.0.17",
+    "dependency_version": "1.0.18",
     "whitelisted_account_ids": ["56e92d4b643037000b000000"],
     "min_zapp_sdk": "11.0.0-Dev",
     "deprecated_since_zapp_sdk": "",
@@ -56,6 +56,11 @@
             "type": "uploader",
             "key": "ios_assets_bundle",
             "default": "www.some-url/ios_assets.zip"
-        }
-    ]    
+        },
+        {
+            "type": "text",
+            "key": "numberOfColumns",
+            "tooltip_text": "Defaults to 3 columns"
+        },
+    ]
 }
