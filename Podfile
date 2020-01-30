@@ -11,11 +11,11 @@ target 'OnBoardingScreenPlugin' do
   pod 'ApplicasterSDK'
   pod 'ZappPlugins'
   pod 'MBProgressHUD'
-  pod 'SwiftyJSON', '~> 4.2.0'
-  pod 'Alamofire', '~> 4.8.0'
-  pod 'RxSwift', '~> 4.4.1'
-  pod 'RxCocoa', '~> 4.4.1'
-  pod 'SDWebImage', '~> 4.4.6'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SDWebImage'
 end
 
 post_install do |installer|
