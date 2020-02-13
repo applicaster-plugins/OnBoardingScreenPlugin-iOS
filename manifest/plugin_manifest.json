@@ -61,6 +61,6 @@
             "type": "text",
             "key": "numberOfColumns",
             "tooltip_text": "Defaults to 3 columns"
-        },
+        }
     ]
 }
