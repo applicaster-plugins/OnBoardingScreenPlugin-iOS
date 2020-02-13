@@ -74,7 +74,7 @@ import SwiftyJSON
         //present OnBoardingVC
         //delay needed because navigationDelegate is not always instantiated when launching onBoarding at app launch
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
-            ZAAppConnector.sharedInstance().navigationDelegate.topmostModal()?.present(viewController, animated: true, completion: nil)
+            ZAAppConnector.sharedInstance().navigationDelegate.topmostModal().present(viewController, animated: true, completion: nil)
         }
     }
     
