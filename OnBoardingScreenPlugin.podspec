@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "OnBoardingScreenPlugin"
-    s.version          = '1.0.18'
+    s.version          = '1.0.20'
     s.summary          = "On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS."
     s.description      = <<-DESC
     On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS.
@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
     s.dependency 'ApplicasterSDK'
     s.dependency 'ZappPlugins'
     s.dependency 'MBProgressHUD'
-    s.dependency 'SwiftyJSON', '~> 4.2.0'
-    s.dependency 'Alamofire', '~> 4.8.0'
-    s.dependency 'RxSwift', '~> 4.4.1'
-    s.dependency 'RxCocoa', '~> 4.4.1'
-    s.dependency 'SDWebImage', '~> 4.4.6'
+    s.dependency 'SwiftyJSON'
+    s.dependency 'Alamofire'
+    s.dependency 'RxSwift'
+    s.dependency 'RxCocoa'
+    s.dependency 'SDWebImage'
 
   end

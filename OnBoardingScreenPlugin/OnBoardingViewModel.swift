@@ -11,7 +11,6 @@ import RxSwift
 import SwiftyJSON
 import ApplicasterSDK
 import ZappPlugins
-import ZappPushPluginsSDK
 
 struct OnBoardingViewModel {
     let apiManager = OnBoardingManager.sharedInstance
@@ -170,8 +169,8 @@ struct OnBoardingViewModel {
     }
     
     func addTagsToDevice(tagsToAdd: [String]) {
-        let pushProviders = ZPPushNotificationManager.sharedInstance.getProviders()
-        guard let pushProvider = pushProviders.first,
+        let pushProviders = ZAAppConnector.sharedInstance().pluginsDelegate?.pushNotificationsPluginsManager?.getProviders()
+        guard let pushProvider = pushProviders?.first,
             pushProvider.responds(to: #selector(ZPPushProviderProtocol.addTagsToDevice(_:completion:))) else {
                 return
         }
@@ -189,8 +188,8 @@ struct OnBoardingViewModel {
     
     
     func removeTagsFromDevice(tagsToRemove: [String]) {
-        let pushProviders = ZPPushNotificationManager.sharedInstance.getProviders()
-        guard let pushProvider = pushProviders.first,
+        let pushProviders = ZAAppConnector.sharedInstance().pluginsDelegate?.pushNotificationsPluginsManager?.getProviders()
+        guard let pushProvider = pushProviders?.first,
             pushProvider.responds(to: #selector(ZPPushProviderProtocol.addTagsToDevice(_:completion:))) else {
                 return
         }

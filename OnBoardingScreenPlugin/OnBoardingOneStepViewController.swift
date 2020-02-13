@@ -70,17 +70,17 @@ class OnBoardingOneStepViewController: UIViewController {
         
         guard let styles = OnBoardingManager.sharedInstance.styles else { return }
         if let backgroundColor = styles["backgroundColor"] as? String {
-            self.view.backgroundColor = UIColor(hex: backgroundColor)
-            nextStepButtonView.backgroundColor = UIColor(hex: backgroundColor)
-            nextStepButton.setTitleColor(UIColor(hex: backgroundColor), for: .normal)
+            self.view.backgroundColor = UIColor.init(argbHexString: backgroundColor)
+            nextStepButtonView.backgroundColor = UIColor.init(argbHexString: backgroundColor)
+            nextStepButton.setTitleColor(UIColor.init(argbHexString: backgroundColor), for: .normal)
         }
         if let highlightColor = styles["highlightColor"] as? String {
-            hightlightTitleLabel.textColor = UIColor(hex: highlightColor)
-            nextStepButton.backgroundColor = UIColor(hex: highlightColor)
+            hightlightTitleLabel.textColor = UIColor.init(argbHexString: highlightColor)
+            nextStepButton.backgroundColor = UIColor.init(argbHexString: highlightColor)
         }
         if let titleColor = styles["titleColor"] as? String {
-            topTitleLabel.textColor = UIColor(hex: titleColor)
-            titleDividerView.backgroundColor = UIColor(hex: titleColor).withAlphaComponent(0.5)
+            topTitleLabel.textColor = UIColor.init(argbHexString: titleColor)
+            titleDividerView.backgroundColor = UIColor.init(argbHexString: titleColor).withAlphaComponent(0.5)
         }
     }
     
