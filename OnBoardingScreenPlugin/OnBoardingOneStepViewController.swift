@@ -211,6 +211,24 @@ extension OnBoardingOneStepViewController: UICollectionViewDataSource {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+
+        switch kind {
+        case UICollectionView.elementKindSectionFooter:
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "OnBoardingOneStepViewController_BottomSeparator",
+                                                                             for: indexPath)
+
+            footerView.backgroundColor = .clear
+            return footerView
+
+        default:
+            return UICollectionReusableView()
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case categoryCollectionView:
