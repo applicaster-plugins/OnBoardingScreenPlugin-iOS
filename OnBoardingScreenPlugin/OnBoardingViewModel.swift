@@ -58,7 +58,7 @@ struct OnBoardingViewModel {
     }
     
     func prefillPersistedUserSelection() {
-        guard  let userRecommendationTags = APKeychain.object(forKey: "userRecommendationTags") as? [String] else { return }
+        guard  let userRecommendationTags = OnBoardingTagsUtil.storedTags() else { return }
         //we need to get the tags without the language code in the scenario that a user added tags to their preferences
         //then changed the language on the device and re-launched on-boarding
         var baseRecommendationTags: [String] = []
@@ -162,9 +162,9 @@ struct OnBoardingViewModel {
     }
     
     func addTagsToKeychain(tagsToAdd: [String]) {
-        APKeychain.setObject(tagsToAdd, forKey: "userRecommendationTags")
-        let stringifiedTags = tagsToAdd.description
+        OnBoardingTagsUtil.saveTags(tagsToAdd)
         //TODO: enable SessionStorage once re-factored SessionStorage is in stable SDK
+        let stringifiedTags = tagsToAdd.description
         //let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: stringifiedTags, namespace: "onboarding")
     }
     
