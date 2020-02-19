@@ -54,8 +54,9 @@ import SwiftyJSON
     }
     
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
+        OnBoardingTagsUtil.cleanRunCheck()
         //if there is userRecommendationTags in KeyChain don't launch plugin at start-up
-        if let userRecommendationTags = APKeychain.object(forKey: "userRecommendationTags") as? [String], let completion = completion {
+        if let userRecommendationTags = OnBoardingTagsUtil.storedTags(), let completion = completion {
             //TODO: enable SessionStorage once re-factored SessionStorage is in stable SDK
             //let stringifiedTags = userRecommendationTags.description
             //let _ = SessionStorage.sharedInstance.set(key: "userRecommendationTags", value: stringifiedTags, namespace: "onboarding")
