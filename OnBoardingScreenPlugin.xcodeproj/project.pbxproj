@@ -25,6 +25,8 @@
 		86B0D3F222399BF60013FD3F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */; };
 		86EEB16D2232DA250050B82A /* OnBoardingViewControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */; };
 		86EEB18B2236EC030050B82A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEB1882236EC030050B82A /* Category.swift */; };
+		989B8D16240D9FB9009DCBCF /* OnBoardingTagsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989B8D14240D9FB9009DCBCF /* OnBoardingTagsUtil.swift */; };
+		989B8D17240D9FB9009DCBCF /* OnBoardingColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989B8D15240D9FB9009DCBCF /* OnBoardingColorUtil.swift */; };
 		D70EDDE0E503F154638C2F43 /* Pods_OnBoardingScreenPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		86B0D3F022399BF60013FD3F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		86EEB16C2232DA250050B82A /* OnBoardingViewControllers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoardingViewControllers.storyboard; sourceTree = "<group>"; };
 		86EEB1882236EC030050B82A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		989B8D14240D9FB9009DCBCF /* OnBoardingTagsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingTagsUtil.swift; sourceTree = "<group>"; };
+		989B8D15240D9FB9009DCBCF /* OnBoardingColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingColorUtil.swift; sourceTree = "<group>"; };
 		AB3C0DFAC450D9D7944B420C /* Pods_OnBoardingScreenPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnBoardingScreenPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,7 @@
 		864F58BD222D8FB800CD2EF2 /* OnBoardingScreenPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				989B8D13240D9FA1009DCBCF /* Utils */,
 				39762D5B225650B800569847 /* API */,
 				864F58BF222D8FB800CD2EF2 /* Info.plist */,
 				86EEB1962236ECE10050B82A /* Models */,
@@ -185,6 +190,15 @@
 				86B2B9A422394B280015A272 /* Cells */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		989B8D13240D9FA1009DCBCF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				989B8D15240D9FB9009DCBCF /* OnBoardingColorUtil.swift */,
+				989B8D14240D9FB9009DCBCF /* OnBoardingTagsUtil.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,10 +334,12 @@
 				39762D5F2256510100569847 /* NetworkService.swift in Sources */,
 				862CB323224EA69900C5F0A7 /* OnBoardingOneStepViewController.swift in Sources */,
 				86A59B4B223197A300CED18F /* OnBoardingViewModel.swift in Sources */,
+				989B8D16240D9FB9009DCBCF /* OnBoardingTagsUtil.swift in Sources */,
 				39762D5A2256442B00569847 /* Segment.swift in Sources */,
 				86EEB18B2236EC030050B82A /* Category.swift in Sources */,
 				39762D5D225650D900569847 /* OnBoardingManager.swift in Sources */,
 				86B0D3F122399BF60013FD3F /* CategoryCollectionViewCell.swift in Sources */,
+				989B8D17240D9FB9009DCBCF /* OnBoardingColorUtil.swift in Sources */,
 				39762D652256710F00569847 /* SegmentCollectionViewCell.swift in Sources */,
 				39762D612256511B00569847 /* NetworkURLRequestConvertible.swift in Sources */,
 				864F58C9222D900A00CD2EF2 /* OnBoardingScreenPlugin.swift in Sources */,
