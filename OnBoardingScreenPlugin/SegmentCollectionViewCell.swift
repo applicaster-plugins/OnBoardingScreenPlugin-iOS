@@ -113,7 +113,7 @@ class SegmentCollectionViewCell: UICollectionViewCell {
         
         guard let styles = OnBoardingManager.sharedInstance.styles else { return }
         if let backgroundColor = styles["backgroundColor"] as? String {
-            selectSegmentIconBgView.backgroundColor = UIColor(hex: backgroundColor).withAlphaComponent(0.4)
+            selectSegmentIconBgView.backgroundColor = OnBoardingColorUtil.colorFromCMSString(backgroundColor).withAlphaComponent(0.4)
         }
     }
     

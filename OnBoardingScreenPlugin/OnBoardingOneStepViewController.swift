@@ -70,17 +70,17 @@ class OnBoardingOneStepViewController: UIViewController {
         
         guard let styles = OnBoardingManager.sharedInstance.styles else { return }
         if let backgroundColor = styles["backgroundColor"] as? String {
-            self.view.backgroundColor = UIColor.init(argbHexString: backgroundColor)
-            nextStepButtonView.backgroundColor = UIColor.init(argbHexString: backgroundColor)
-            nextStepButton.setTitleColor(UIColor.init(argbHexString: backgroundColor), for: .normal)
+            self.view.backgroundColor = OnBoardingColorUtil.colorFromCMSString(backgroundColor)
+            nextStepButtonView.backgroundColor = OnBoardingColorUtil.colorFromCMSString(backgroundColor)
+            nextStepButton.setTitleColor(OnBoardingColorUtil.colorFromCMSString(backgroundColor), for: .normal)
         }
         if let highlightColor = styles["highlightColor"] as? String {
-            hightlightTitleLabel.textColor = UIColor.init(argbHexString: highlightColor)
-            nextStepButton.backgroundColor = UIColor.init(argbHexString: highlightColor)
+            hightlightTitleLabel.textColor = OnBoardingColorUtil.colorFromCMSString(highlightColor)
+            nextStepButton.backgroundColor = OnBoardingColorUtil.colorFromCMSString(highlightColor)
         }
         if let titleColor = styles["titleColor"] as? String {
-            topTitleLabel.textColor = UIColor.init(argbHexString: titleColor)
-            titleDividerView.backgroundColor = UIColor.init(argbHexString: titleColor).withAlphaComponent(0.5)
+            topTitleLabel.textColor = OnBoardingColorUtil.colorFromCMSString(titleColor)
+            titleDividerView.backgroundColor = OnBoardingColorUtil.colorFromCMSString(titleColor).withAlphaComponent(0.5)
         }
     }
     
