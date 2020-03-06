@@ -38,6 +38,10 @@ class OnBoardingOneStepViewController: UIViewController {
         if let viewModel = viewModel {
             viewModel.fetch()
         }
+        
+        if #available(iOS 13.0, *) {
+            isModalInPresentation = true
+        }
     }
     
     override var shouldAutorotate: Bool {
