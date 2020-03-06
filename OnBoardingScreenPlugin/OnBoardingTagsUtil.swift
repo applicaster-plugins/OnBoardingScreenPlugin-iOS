@@ -36,6 +36,7 @@ final class OnBoardingTagsUtil {
     
     static func wipeTags() {
 //TODO: enable SessionStorage once re-factored SessionStorage is in stable SDK
+        guard APKeychain.object(forKey: Constants.tagsStorageKey) != nil else { return }
         APKeychain.removeValue(forKey: Constants.tagsStorageKey)
 //        _ = ZAAppConnector.sharedInstance().storageDelegate?.sessionStorageSetValue(for: Constants.tagsStorageKey,
 //                                                                                    value: "",
