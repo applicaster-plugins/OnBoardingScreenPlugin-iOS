@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "OnBoardingScreenPlugin"
-    s.version          = '1.0.23'
+    s.version          = '1.0.24'
     s.summary          = "On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS."
     s.description      = <<-DESC
     On-boarding plugin that allows user to select preferences in content so that feeds and push notifications are customized for specific user for Zapp iOS.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                     'OTHER_LDFLAGS' => '$(inherited)',
                     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
                     'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-                    'SWIFT_VERSION' => '4.2'
+                    'SWIFT_VERSION' => '5.1'
                   }
 
     s.dependency 'ApplicasterSDK'
