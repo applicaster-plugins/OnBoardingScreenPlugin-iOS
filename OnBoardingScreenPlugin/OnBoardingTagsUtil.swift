@@ -27,6 +27,12 @@ final class OnBoardingTagsUtil {
         }
         
         storeTagsString(joinedString)
+        
+        let stringifiedTags = tags.description
+        _ = ZAAppConnector.sharedInstance().storageDelegate?.localStorageSetValue(for: "userRecommendationTags",
+                                                                                  value:stringifiedTags,
+                                                                                  namespace: "onboarding")
+        let loadedValue = ZAAppConnector.sharedInstance().storageDelegate?.localStorageValue(for: "userRecommendationTags", namespace: "onboarding")
     }
     
     static func storedTags() -> [String]? {
